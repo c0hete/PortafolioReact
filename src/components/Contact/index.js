@@ -23,11 +23,11 @@ const Contact = () => {
       .sendForm('service_nabqaor', 'template_lwrj163', form.current, 'u5cg8p36QlnIy5BWr')
       .then(
         () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
+          alert('Mensaje enviado satisfactoriamente!')
+          window.location.href = "/";
         },
         () => {
-          alert('Failed to send the message, please try again')
+          alert('Error al enviar, porfavor intenta de nuevo.')
         }
       )
   }

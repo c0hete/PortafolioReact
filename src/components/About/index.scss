@@ -1,22 +1,22 @@
 .stage-cube-cont {
   width: 50%;
   height: 100%;
-  top: 0;
+  top: 10%;
   padding-top: 18%;
   margin-left: 0;
   position: absolute;
-   left: 50%;
+   left: 60%;
   overflow: hidden;
 }
 
 .stage-cube-cont2 {
   width: 50%;
   height: 100%;
-  top: 10%;
-  padding-top: 0%;
+  top: -30%;
+  padding-top: 18%;
   margin-left: 0;
   position: absolute;
-  right: 25%;
+  right: 15%;
   overflow: hidden;
 }
 
@@ -29,6 +29,7 @@
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
 
+  
   
   div {
     position: absolute;
