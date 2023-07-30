@@ -1,12 +1,18 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { auth, storage, db } from '../../firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { addDoc } from 'firebase/firestore';
 import { collection } from 'firebase/firestore/lite';
 
-
 const Home = () => {
     const form = useRef();
+    const [isMounted, setIsMounted] = useState(true);
+
+    useEffect(() => {
+        return () => {
+            setIsMounted(false);
+        };
+    }, []);
 
     const submitPortfolio = (e) => {
         e.preventDefault();
@@ -20,45 +26,52 @@ const Home = () => {
         uploadBytes(storageRef, image).then(
             (snapshot) => {
                 getDownloadURL(snapshot.ref).then((downloadUrl) => {
-                    savePortfolio({
-                        name,
-                        description,
-                        url,
-                        image: downloadUrl
-                    })
+                    if (isMounted) { // Verificar si el componente todavía está montado antes de actualizar el estado
+                        savePortfolio({
+                            name,
+                            description,
+                            url,
+                            image: downloadUrl
+                        });
+                    }
                 }, (error) => {
                     console.log(error);
+                    if (isMounted) {
+                        savePortfolio({
+                            name,
+                            description,
+                            url,
+                            image: null
+                        });
+                    }
+                });
+            }, (error) => {
+                console.log(error);
+                if (isMounted) {
                     savePortfolio({
                         name,
                         description,
                         url,
                         image: null
-                    })
-                })
-            }, (error) => {
-                console.log(error);
-                savePortfolio({
-                    name,
-                    description,
-                    url,
-                    image: null
-                })
+                    });
+                }
             }
-        )
-    }
+        );
+    };
 
     const savePortfolio = async (portfolio) => {
         try {
             await addDoc(collection(db, 'portfolio'), portfolio);
-            window.location.reload(false);
+            if (isMounted) {
+                window.location.reload(false);
+            }
         } catch (error) {
             alert('Failed to add portfolio');
         }
-    }
+    };
 
     return (
         <div className="dashboard">
-
             <form ref={form} onSubmit={submitPortfolio}>
                 <p><input type="text" placeholder="Name" /></p>
                 <p><textarea placeholder="Description" /></p>
@@ -68,7 +81,7 @@ const Home = () => {
                 <button onClick={() => auth.signOut()}>Sign out</button>
             </form>
         </div>
-    )
-}
+    );
+};
 
 export default Home;

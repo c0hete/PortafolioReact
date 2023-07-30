@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('gmail', 'template_lwrj163', form.current, 'service_nabqaor')
+      .sendForm('service_nabqaor', 'template_lwrj163', form.current, 'u5cg8p36QlnIy5BWr')
       .then(
         () => {
           alert('Message successfully sent!')
@@ -91,7 +91,6 @@ const Contact = () => {
           <br />
          Chile,
           <br />
-          Inglaterra 730 <br />
           Temuco <br />
           <br />
           <span>jose.alv.mazz.dev@gmail.com</span>
@@ -99,7 +98,7 @@ const Contact = () => {
         <div className="map-wrap">
         <MapContainer center={[-38.7318286, -72.6141467]} zoom={8}>
   <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-  <Marker position={[-38.731815, -72.611574]}>
+  <Marker position={[-38.737432, -72.590073]}>
   <Popup>Si algun día quieres tomarte un café, aquí vive José.</Popup>
   </Marker>
 </MapContainer>
