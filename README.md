@@ -1,2 +1,0 @@
-# PortafolioReact
-Proyecto de portafolio
