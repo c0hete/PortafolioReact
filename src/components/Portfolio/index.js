@@ -45,7 +45,7 @@ const Portfolio = () => {
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}
-                                    >View</button>
+                                    >Ver</button>
                                 </div>
                             </div>
                         )
