@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./index.scss";
 import { getDocs, collection } from 'firebase/firestore';
 import { db } from '../../firebase';
@@ -46,6 +48,20 @@ const Portfolio = () => {
                                         className="btn"
                                         onClick={() => window.open(port.url)}
                                     >Ver</button>
+                                    <button
+                                        className="btn"
+                                        onClick={() => window.open(port.sourceCodeUrl)}
+                                    >Ver Código <a
+                                    href={port.sourceCodeUrl}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faGithub}
+                                        color="#4d4d4e"
+                                        className="anchor-icon"
+                                    />
+                                </a> </button>
                                 </div>
                             </div>
                         )
