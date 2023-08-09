@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
-import Logo from './Logo';
 import './index.scss';
+import logoImage from '../../assets/images/logo-gradiente.png'; // Importa la imagen de logo
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -76,7 +76,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <Logo />
+        <div className="logo-container">
+          <img src={logoImage} alt="Logo" className="logo-image" />
+        </div>
       </div>
       <Loader type="pacman" />
     </>
