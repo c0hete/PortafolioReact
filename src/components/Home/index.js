@@ -60,18 +60,18 @@ const Home = () => {
               <a
                 href="/documents/JOSE-ALVARADO-PROGRAMADOR-ES.pdf"
                 target="_blank"
-                className="flat-button download-button"
+                className="flat-button "
                 download="JOSE-ALVARADO-PROGRAMADOR-ES.pdf"
               >
-                DESCARGAR CV EN ESPAÑOL
+                CV Español
               </a>
               <a
                 href="/documents/JOSE-ALVARADO-DEVELOPER-EN.pdf"
                 target="_blank"
-                className="flat-button download-button"
+                className="flat-button"
                 download="JOSE-ALVARADO-DEVELOPER-EN.pdf"
               >
-                DOWNLOAD CV IN ENGLISH
+                CV English
               </a>
             </div>
           </div>

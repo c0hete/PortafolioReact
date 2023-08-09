@@ -10,6 +10,17 @@
     max-height: 90%;
   }
 
+  .flat-button2 {
+
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
   h1 {
     color: #fff;
     font-size: 56px;
@@ -74,6 +85,7 @@
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
+    margin: 5px 0;
 
     &:hover {
       background: #fd7e31;
@@ -115,8 +127,13 @@
   .home-page .flat-button {
     float: none;
     display: block;
-    margin: 20px 10px 10px 10px;
+    margin: 20px 10px 10px 20px;
     width: 124px;
+    margin: 5px 0;
+
+    @media screen and (max-width: 768px) {
+      max-width: 70%; /* Ajusta el ancho del botón para evitar desbordamiento */
+    }
   }
 }
 
@@ -145,10 +162,10 @@
   .flat-button {
     font-size: 10px;
     padding: 8px 12px;
+    margin: 5px 0;
   }
 
   .logo-container {
     display: none; 
-}
-
+  }
 }
