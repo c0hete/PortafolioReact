@@ -64,6 +64,10 @@
             font-weight: 700;
         }
 
+        .anchor-icon {
+            color: #FFFFFF;
+        }
+        
         .btn {
             margin-top: 30px;
             margin-bottom: 10px;
@@ -122,5 +126,21 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+        /* Estilos para los botones en pantallas móviles */
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+        
+}
+
+.buttons-container .btn {
+    flex: 2; /* toma el máximo ancho posible */
+    margin-right: 1px; /* agrega un pequeño espacio entre los botones */
+}
+
+.buttons-container .btn:last-child {
+    margin-right: 0; /* elimina el margen del último botón */
+}
+
     }
 }

@@ -44,24 +44,28 @@ const Portfolio = () => {
                                 <div className="content">
                                     <p className="title">{port.name}</p>
                                     <h4 className="description">{port.description}</h4>
-                                    <button
-                                        className="btn"
-                                        onClick={() => window.open(port.url)}
-                                    >Ver</button>
-                                    <button
-                                        className="btn"
-                                        onClick={() => window.open(port.sourceCodeUrl)}
-                                    >Ver Código <a
-                                    href={port.sourceCodeUrl}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <FontAwesomeIcon
-                                        icon={faGithub}
-                                        color="#4d4d4e"
-                                        className="anchor-icon"
-                                    />
-                                </a> </button>
+                                    <div className="buttons-container">
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open(port.url)}
+                                >Ver</button>
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open(port.sourceCodeUrl)}
+                                ><a
+                                        href={port.sourceCodeUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <FontAwesomeIcon
+                                            icon={faGithub}
+                                            color="#4d4d4e"
+                                            className="anchor-icon"
+                                        />
+                                    </a>
+                                </button>
+                            </div>
+
                                 </div>
                             </div>
                         )
