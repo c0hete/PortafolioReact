@@ -110,4 +110,17 @@
             background: transparent;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .image-box {
+            flex: 1 1 100%;  /* Esto hará que tome todo el ancho disponible */
+            max-width: 100%;  /* Esto hará que tome todo el ancho disponible */
+        }
+    
+        /* Si deseas, puedes ajustar otros estilos para mejorar la apariencia en móvil */
+        .portfolio-page {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
 }
