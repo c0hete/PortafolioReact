@@ -25,6 +25,9 @@
         overflow: hidden;
         border-radius: 10px;
         max-width: calc(25% - 10px);
+        .image-box .content {
+            box-sizing: border-box;
+        }
 
         .portfolio-image {
             position: absolute;
@@ -117,6 +120,7 @@
 
     @media screen and (max-width: 768px) {
         .image-box {
+            height: 450px;
             flex: 1 1 100%;  /* Esto hará que tome todo el ancho disponible */
             max-width: 100%;  /* Esto hará que tome todo el ancho disponible */
         }
@@ -136,6 +140,9 @@
 .buttons-container .btn {
     flex: 2; /* toma el máximo ancho posible */
     margin-right: 1px; /* agrega un pequeño espacio entre los botones */
+}
+.image-box .content {
+    box-sizing: border-box;
 }
 
 .buttons-container .btn:last-child {
