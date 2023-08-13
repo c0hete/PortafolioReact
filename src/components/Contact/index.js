@@ -37,16 +37,16 @@ const Contact = () => {
       <div className="container contact-page">
         <div className="text-zone">
           <h1>
-            <AnimatedLetters
+            <AnimatedLettersS
               letterClass={letterClass}
               strArray={['C', 'o', 'n', 't', 'á', 'c', 't','a','m', 'e']}
               idx={15}
             />
           </h1>
           <p>
-          Estoy interesado/a en oportunidades freelance, especialmente en proyectos ambiciosos o grandes. 
+          Estoy interesado en oportunidades freelance, tanto como proyectos en el ambito empresarial.
           Sin embargo, si tienes cualquier otra solicitud o pregunta, 
-          no dudes en contactarme utilizando el formulario que se encuentra a continuación.
+          no dudes en contactarme utilizando el formulario que se encuentra a continuación. 
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
