@@ -63,7 +63,7 @@ const Home = () => {
                 className="flat-button "
                 download="JOSE-ALVARADO-PROGRAMADOR-ES.pdf"
               >
-                CV Español
+                CURRICULUM - ES
               </a>
               <a
                 href="/documents/JOSE-ALVARADO-DEVELOPER-EN.pdf"
@@ -71,7 +71,7 @@ const Home = () => {
                 className="flat-button"
                 download="JOSE-ALVARADO-DEVELOPER-EN.pdf"
               >
-                CV English
+                CURRICULUM - EN
               </a>
             </div>
           </div>
