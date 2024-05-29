@@ -39,13 +39,13 @@
               />
             </h1>
         <p>
-          Soy un desarrollador full stack ambicioso en busca de un puesto en una empresa de tecnologías de la información establecida, con la oportunidad de trabajar con las últimas tecnologías en proyectos desafiantes y diversos.
+          Soy un desarrollador full stack en busca de un puesto en una empresa de tecnología esteblecida, con la oportunidad de trabajar con las últimas tecnologías en proyectos desafiantes.
         </p>
         <p align="LEFT">
-          Tengo mucha confianza en mí mismo, soy naturalmente curioso y siempre estoy trabajando en mejorar mis habilidades tanto en el desarrollo front-end como en el back-end, resolviendo problemas de diseño y programación uno a la vez.
+          Tengo mucha confianza en mí mismo, soy naturalmente curioso y siempre estoy trabajando en mejorar mis habilidades tanto en el desarrollo back-end como en el front-end, resolviendo problemas de programación y diseño uno a la vez.
         </p>
         <p>
-        Si tuviera que definirme en una sola frase, sería un apasionado del mundo de las tecnologías de la información y un amante de la música, siempre buscando la armonía perfecta entre la creatividad y la eficiencia.
+        Si tuviera que definirme en una sola frase, sería un apasionado del mundo de la tecnología, siempre buscando la armonía perfecta entre la eficiencia y la creatividad.
         </p>
 
 
