@@ -94,7 +94,7 @@
 .logo-container {
   position: absolute;
   top: 45%;
-  right: 3%; /* Ajusta la distancia desde el lado derecho */
+  right: 10%; /* Ajusta la distancia desde el lado derecho */
   transform: translateY(-50%);
   opacity: 0; /* Comienza invisible */
   animation: fadeIn 2s 4s forwards; /* Aparece después de 5 segundos */

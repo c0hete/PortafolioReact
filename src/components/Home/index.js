@@ -51,7 +51,7 @@ const Home = () => {
             <br />
             <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={20} />
           </h1>
-          <h2>Full Stack Developer / JavaScript / Java / Php</h2>
+          <h2>Full Stack Developer</h2>
           <div className="button-container">
             <Link to="/contact" className="flat-button">
               CONTACTÁME
@@ -65,14 +65,7 @@ const Home = () => {
               >
                 CURRICULUM - ES
               </a>
-              <a
-                href="/documents/JOSE-ALVARADO-DEVELOPER-EN.pdf"
-                target="_blank"
-                className="flat-button"
-                download="JOSE-ALVARADO-DEVELOPER-EN.pdf"
-              >
-                CURRICULUM - EN
-              </a>
+
             </div>
           </div>
         </div>
